@@ -32,6 +32,8 @@ class Board: UIView {
     var position: Int!
     var winner: Player!
     
+    var playerCheck: Bool! = false
+    
     weak var delegate: BoardDelegate!
     
     var all: [UIImageView] {
@@ -85,6 +87,14 @@ extension Board {
         let player = delegate.playerTurn(board: self, position: imageView.tag)
         imageView.removeGestureRecognizer(sender)
         animateTurn(imageView: imageView, player: player)
+        
+        if playerCheck == false {
+            animateTurn(imageView: imageView, player: .x)
+            playerCheck = true
+        } else {
+            animateTurn(imageView: imageView, player: .o)
+            playerCheck = false
+        }
     }
     
     func animateTurn(imageView: UIImageView, player: Player) {

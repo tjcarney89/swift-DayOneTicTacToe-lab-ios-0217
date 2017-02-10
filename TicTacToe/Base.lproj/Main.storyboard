@@ -110,6 +110,20 @@
                                     <constraint firstAttribute="width" constant="2" id="LdF-7E-cjD"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vK-5D-S9L">
+                                <rect key="frame" x="20" y="487" width="137" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UL3-9F-ce8">
+                                <rect key="frame" x="1204" y="516" width="101" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -140,6 +154,8 @@
                         <outlet property="boardThree" destination="tGZ-PR-9UH" id="V6b-gf-CcH"/>
                         <outlet property="boardTwo" destination="dPN-bt-VnD" id="jvZ-g1-ufp"/>
                         <outlet property="boardZero" destination="Xy9-4h-cYt" id="b8R-cH-ORg"/>
+                        <outlet property="leftLabel" destination="2vK-5D-S9L" id="aIE-JZ-xga"/>
+                        <outlet property="rightLabel" destination="UL3-9F-ce8" id="zAB-X2-xCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
